@@ -1,0 +1,11 @@
+.mobile-open-btn {
+   background-color: transparent;
+   line-height: 0;
+   padding: 0;
+   // border: none;
+   cursor: pointer;
+
+   &__icon {
+      fill: var(--color-main-title);
+   }
+}
