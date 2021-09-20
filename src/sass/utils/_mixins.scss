@@ -3,3 +3,7 @@
    line-height: $lh;
    letter-spacing: $ls;
 }
+
+@mixin animate($property, $time: 250ms, $cubic: cubic-bezier(0.4, 0, 0.2, 1)) {
+   transition: $property $time $cubic;
+}

@@ -7,6 +7,8 @@
    right: 0;
    top: 0;
    transform: translateX(100%);
+   overflow-x: auto;
+   @include animate(transform);
    // visibility: hidden;
 
    &__close-btn {
@@ -17,15 +19,13 @@
       cursor: pointer;
       line-height: 0;
       padding: 0;
-      // border: none;
+      border: none;
    }
 }
 
-.mobile-open-btn {
-   &__icon {
-   }
-}
-
-.is-open {
+.mobile-backdrop.is-open .menu-burger {
    transform: translateX(0);
 }
+// .is-open {
+//    transform: translateX(0);
+// }

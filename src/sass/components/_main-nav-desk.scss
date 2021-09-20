@@ -1,0 +1,21 @@
+.main-nav-desk {
+   display: flex;
+
+   @media screen and (max-width: 1279px) {
+      display: none;
+   }
+
+   &_indent {
+      margin-left: 110px;
+   }
+
+   &__item:not(:last-child) {
+      margin-right: 35px;
+   }
+
+   &__link {
+      @include font(16px, 1.31, 0);
+      font-weight: 700;
+      color: var(--color-menu);
+   }
+}

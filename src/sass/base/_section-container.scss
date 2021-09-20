@@ -1,6 +1,12 @@
 .section {
    padding-bottom: 120px;
    padding-top: 120px;
+
+   &_hero {
+      padding-top: 195px;
+      padding-bottom: 160px;
+      background-color: var(--color-background-main-);
+   }
 }
 
 .container {
@@ -16,12 +22,12 @@
 
 @media screen and (min-width: 768px) {
    .container {
-      width: 700px;
+      width: 730px;
    }
 }
 
 @media screen and (min-width: 1280px) {
    .container {
-      width: 1050px;
+      width: 1080px;
    }
 }

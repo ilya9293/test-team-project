@@ -4,28 +4,46 @@
          <a href="./index.html" class="logo-link">
             <img src="./images/logo.png" alt="логотип мороженного" class="logo-link__img">
          </a>
+
+         <ul class="main-nav-desk item main-nav-desk_indent">
+            <li class="main-nav-desk__item"><a href="./index.html"
+                  class="main-nav-desk__link link accent-color">Home</a></li>
+            <li class="main-nav-desk__item"><a href="" class="main-nav-desk__link link">About us</a></li>
+            <li class="main-nav-desk__item"><a href="" class="main-nav-desk__link link">How it’s made?</a></li>
+            <li class="main-nav-desk__item"><a href="" class="main-nav-desk__link link">Our products</a></li>
+            <li class="main-nav-desk__item"><a href="" class="main-nav-desk__link link">Contact</a></li>
+         </ul>
+
          <button type="button" class="mobile-open-btn" data-menu-button>
             <svg class="mobile-open-btn__icon" width="20" height="12">
                <use href="./images/svg/icons.svg#icon-burger"></use>
             </svg>
          </button>
+
+         <button type="button" class="buy-btn buy-btn_tablet">
+            <span class="buy-btn__text">Buy now</span>
+            <svg class="buy-btn__icon" width="8" height="10">
+               <use href="./images/svg/icons.svg#icon-button-arrow"></use>
+            </svg>
+         </button>
          <!-- Меню бургер -->
-         <div class="mobile-backdrop">
-            <div class="menu-burger" data-menu>
+         <div class="mobile-backdrop" data-menu>
+            <div class="menu-burger">
                <button type="button" class="menu-burger__close-btn" data-menu-close>
                   <svg class="menu-burger__icon" width="14" height="14">
                      <use href="./images/svg/icons.svg#icon-close"></use>
                   </svg>
                </button>
-   
+
                <button type="button" class="buy-btn buy-btn_indent">
-                  <span class="buy-btn__text">Buy now</span> 
+                  <span class="buy-btn__text">Buy now</span>
                   <svg class="buy-btn__icon" width="8" height="10">
                      <use href="./images/svg/icons.svg#icon-button-arrow"></use>
                   </svg>
                </button>
                <ul class="main-nav item">
-                  <li class="main-nav__item"><a href="./index.html" class="main-nav__link link accent-color">Home</a></li>
+                  <li class="main-nav__item"><a href="./index.html" class="main-nav__link link accent-color">Home</a>
+                  </li>
                   <li class="main-nav__item"><a href="" class="main-nav__link link">About us</a></li>
                   <li class="main-nav__item"><a href="" class="main-nav__link link">How it’s made?</a></li>
                   <li class="main-nav__item"><a href="" class="main-nav__link link">Our products</a></li>
@@ -37,4 +55,12 @@
    </div>
 </header>
 
-jhfgkjdhhnl
+<section class="section section_hero">
+   <div class="container">
+      <h1 class="hero-title">ice cream made with
+         <span class="hero-title__big-text">passion</span>
+      </h1>
+      <button type="button" class="btn-products btn-products_indent">Products</button>
+      <button type="button" class="btn-made">How it’s made?</button>
+   </div>
+</section>

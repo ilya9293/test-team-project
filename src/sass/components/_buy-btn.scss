@@ -1,0 +1,46 @@
+.buy-btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 209px;
+   height: 44px;
+   line-height: 0;
+   padding: 0;
+   background-color: var(--color-menu);
+   border: none;
+   border-radius: 22px;
+   cursor: pointer;
+
+   &_indent {
+      margin: 0 auto;
+      margin-bottom: 30px;
+   }
+
+   @media screen and (max-width: 767px) {
+      &_tablet {
+         display: none;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &_tablet {
+         margin-left: auto;
+      }
+   }
+
+   &__text {
+      margin-right: 16px;
+      @include font(16px, 1.31, 0);
+      font-weight: 700;
+      color: var(--color-main-title);
+   }
+
+   &__icon {
+      fill: var(--color-main-title);
+   }
+
+   &:hover,
+   &:focus {
+      background-color: #ecebeb;
+   }
+}

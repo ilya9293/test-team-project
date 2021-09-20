@@ -1,5 +1,8 @@
-// .logo-link {
-//    &__img {
-//       max-width: 199px;
-//    }
-// }
+.logo-link {
+  
+   @media screen and (min-width: 1280px) {
+      & {
+         margin-left: -70px;
+      }
+   }
+}
