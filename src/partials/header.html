@@ -60,7 +60,32 @@
       <h1 class="hero-title">ice cream made with
          <span class="hero-title__big-text">passion</span>
       </h1>
-      <button type="button" class="btn-products btn-products_indent">Products</button>
-      <button type="button" class="btn-made">How it’s made?</button>
+      <ul class="products item">
+         <li class="products__item"><a href="#" class="products__link link"><span
+                  class="products__text">Products</span></a></li>
+         <li class="products__item"><a href="#" class="products__link products__link_made link"><span
+                  class="products__text products__text_made">How it’s
+                  made?</span></a></li>
+      </ul>
+
+      <!-- Круг -->
+      <div class="circle"></div>
+
+      <!-- Мороженное -->
+      <picture>
+         <source srcset="./images/hero/hero-cone-desktop.webp 1x, ./images/hero/hero-cone-desktop@2x.webp 2x"
+            media="(min-width: 1280px)" type="image/webp">
+         <source srcset="./images/hero/hero-cone-desktop.png 1x, ./images/hero/hero-cone-desktop@2x.png 2x"
+            media="(min-width: 1280px)">
+            <source srcset="./images/hero/hero-cone-tablet.webp 1x, ./images/hero/hero-cone-tablet@2x.webp 2x"
+            media="(min-width: 768px)" type="image/webp">
+         <source srcset="./images/hero/hero-cone-tablet.png 1x, ./images/hero/hero-cone-tablet@2x.png 2x"
+            media="(min-width: 768px)">
+            <source srcset="./images/hero/hero-cone-mob.webp 1x, ./images/hero/hero-cone-mob@2x.webp 2x"
+            media="(max-width: 767px)" type="image/webp">
+         <source srcset="./images/hero/hero-cone-mob.png 1x, ./images/hero/hero-cone-mob@2x.png 2x"
+            media="(max-width: 767px)">
+            <img src="./images/hero/hero-cone-mob.png" alt="Мороженное" class="img-cone">
+      </picture>
    </div>
 </section>
