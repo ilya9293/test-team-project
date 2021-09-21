@@ -1,5 +1,7 @@
 .products {
    display: flex;
+   position: relative;
+   z-index: 2;
 
    &__item:not(:last-child) {
       margin-right: 8px;
