@@ -1,0 +1,31 @@
+.list-cafe {
+   // position: absolute;
+   // top: 94px;
+   // right: 0;
+
+   &__item {
+      width: 16px;
+      height: 16px;
+      background-color: var(--color-menu);
+      border-radius: 50%;
+   }
+
+   &__item:not(:last-child) {
+      margin-bottom: 41px;
+   }
+
+   &__figures {
+      font-family: var(--font-title);
+      @include font(28px, 1.14);
+      text-transform: uppercase;
+      color: var(--color-main-title);
+   }
+
+   &__text {
+      display: block;
+      font-family: var(--font-main);
+      @include font(8px, 1.25, 0);
+      color: var(--color-menu);
+      text-transform: none;
+   }
+}
