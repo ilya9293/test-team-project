@@ -1,0 +1,48 @@
+.hero-title {
+   position: relative;
+   width: 220px;
+   // margin-bottom: 20px;
+   font-family: var(--font-title);
+   @include font(26px, 1.15);
+   text-transform: uppercase;
+   z-index: 3;
+
+   color: var(--color-menu);
+
+   @media screen and (min-width: 768px) {
+      & {
+         width: 165px;
+         @include font(22px, 1.14);
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         margin-bottom: 25px;
+         width: 280px;
+         @include font(38px, 1.16);
+      }
+   }
+
+   &__big-text {
+      font-family: var(--font-title);
+
+      font-size: 48px;
+      line-height: 0.96;
+      text-transform: uppercase;
+
+      color: var(--color-main-title);
+   }
+
+   @media screen and (min-width: 768px) {
+      &__big-text {
+         @include font(34px, 0.91);
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__big-text {
+         @include font(58px, 0.91);
+      }
+   }
+}

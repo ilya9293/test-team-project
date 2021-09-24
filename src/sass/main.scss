@@ -4,4 +4,23 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
+@import "./base/reset";
+@import "./utils/variables";
+@import "./base/section-container";
+@import "./utils/mixins";
+@import "./components/logo";
+@import "./components/mobile-open-btn";
+@import "./layout/page-header";
+@import "./components/menu-burger";
+@import "./layout/mobile-backdrop";
+@import "./components/_buy-btn";
+@import "./components/main-nav";
+@import "./components/accent-color";
+@import "./components/main-nav-desk";
+@import "./layout/hero-title";
+@import "./components/products";
+@import "./layout/circle";
+@import "./layout/img-cone";
+@import "./layout/list-cafe";
+@import "./layout/milk";
+@import "./layout/hero-girl";

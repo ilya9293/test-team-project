@@ -1,0 +1,28 @@
+.circle {
+   position: absolute;
+   width: 346px;
+   height: 344px;
+   background-color: var(--color-sub-title);
+   border-radius: 50%;
+   top: 83px;
+   left: 18%;
+   z-index: 1;
+   
+   @media screen and (min-width: 768px) {
+      & {
+         width: 324px;
+         height: 322px;
+         top: 31px;
+         left: 31%;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         width: 538px;
+         height: 538px;
+         top: 52px;
+         left: 34%;
+      }
+   }
+}

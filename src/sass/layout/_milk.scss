@@ -1,0 +1,82 @@
+.milk {
+   position: absolute;
+   top: 245px;
+   // display: flex;
+   width: 240px;
+   // flex-wrap: wrap;
+   // align-items: flex-start;
+
+   @media screen and (max-width: 767px) {
+      & {
+         display: none;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         top: 430px;
+         width: 420px;
+      }
+   }
+
+   &__img {
+   }
+
+   &__text {
+      position: absolute;
+      left: 115px;
+      top: 47px;
+      width: 114px;
+      @include font(8px, 1.5, 0);
+      color: var(--color-menu);
+
+      @media screen and (min-width: 1280px) {
+         & {
+            @include font(14px, 1.4, 0);
+            width: 200px;
+            left: 220px;
+            top: 55px;
+         }
+      }
+   }
+
+   &__link {
+      position: absolute;
+      left: 115px;
+      top: 102px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      background-color: var(--color-menu);
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+         background-color: #ecebeb;
+      }
+
+      @media screen and (min-width: 1280px) {
+         & {
+            left: 220px;
+            top: 155px;
+            width: 26px;
+            height: 26px;
+         }
+      }
+   }
+
+   &__icon {
+      fill: var(--color-main-title);
+
+      @media screen and (min-width: 1280px) {
+         & {
+            width: 7px;
+            height: 7px;
+         }
+      }
+   }
+}

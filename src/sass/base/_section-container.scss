@@ -1,0 +1,69 @@
+.section {
+   padding-bottom: 120px;
+   padding-top: 120px;
+
+   &_hero {
+      position: relative;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      background-color: var(--color-background-main-);
+      overflow: hidden;
+      height: 502px;
+
+      @media screen and (min-width: 768px) {
+         & {
+            height: 399px;
+         }
+      }
+
+      @media screen and (min-width: 1280px) {
+         & {
+            height: 665px;
+         }
+      }
+   }
+}
+
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+   .container {
+      margin: 0 auto;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .container {
+      width: 730px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .container {
+      width: 1080px;
+   }
+}
+
+.container__hero-title-btn {
+   position: absolute;
+   top: 193px;
+
+   @media screen and (min-width: 768px) {
+      & {
+         top: 100px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         top: 170px;
+      }
+   }
+}
+
+.container_position {
+   position: relative;
+}

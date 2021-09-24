@@ -1,0 +1,13 @@
+.main-nav {
+
+   &__item:not(:last-child) {
+      margin-bottom: 23px;
+   }
+
+   &__link {
+      font-weight: 700;
+      @include font (14px, 1.29, 0);
+      color: var(--color-menu);
+   }
+}
+
