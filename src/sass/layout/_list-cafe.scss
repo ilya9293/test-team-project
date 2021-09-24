@@ -1,31 +1,95 @@
 .list-cafe {
-   // position: absolute;
-   // top: 94px;
-   // right: 0;
+   position: absolute;
+   top: 95px;
+   right: 21px;
+
+   @media screen and (min-width: 1280px) {
+      & {
+         top: 160px;
+         right: 30px;
+      }
+   }
 
    &__item {
+      position: relative;
+   }
+
+   &__item::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -3px;
+      right: -6px;
+      z-index: 1;
       width: 16px;
       height: 16px;
       background-color: var(--color-menu);
       border-radius: 50%;
+
+      @media screen and (min-width: 1280px) {
+         & {
+            width: 30px;
+            height: 30px;
+            top: -8px;
+            right: -14px;
+         }
+      }
+   
    }
 
    &__item:not(:last-child) {
-      margin-bottom: 41px;
+      margin-bottom: 15px;
    }
 
    &__figures {
+      position: relative;
+      z-index: 2;
       font-family: var(--font-title);
       @include font(28px, 1.14);
       text-transform: uppercase;
       color: var(--color-main-title);
+
+      @media screen and (min-width: 1280px) {
+         & {
+            @include font (46px, 1.15)
+         }
+      }
    }
 
    &__text {
-      display: block;
+      position: absolute;
+      bottom: -8px;
+      left: 13px;
+      width: 43px;
+      // display: block;
       font-family: var(--font-main);
       @include font(8px, 1.25, 0);
       color: var(--color-menu);
       text-transform: none;
+
+      @media screen and (min-width: 1280px) {
+         & {
+            @include font (14px, 1.29, 0);
+            left: 19px;
+            width: 75px;
+            bottom: -14px;
          }
+      }
+
+      &_position {
+         left: -7px;
+      }
+
+      @media screen and (min-width: 1280px) {
+         &_position {
+            left: -15px;
+         }
+      }
+   }
+
+   @media screen and (max-width: 767px) {
+      & {
+         display: none;
+      }
+   }
 }
