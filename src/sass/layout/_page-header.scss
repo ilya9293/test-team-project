@@ -1,12 +1,14 @@
 .page-header {
    position: absolute;
    width: 100%;
-   top: 6px;
+   // top: 6px;
    z-index: 20;
+   padding-top: 6px;
 
    @media screen and (min-width: 768px) {
       & {
-         top: 37px;
+         // top: 37px;
+         padding-top: 37px;
       }
    }
 

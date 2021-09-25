@@ -1,8 +1,8 @@
 .milk {
-   position: absolute;
-   top: 245px;
+   // position: absolute;
+   // top: 145px;
    // display: flex;
-   width: 240px;
+   // width: 240px;
    // flex-wrap: wrap;
    // align-items: flex-start;
 
@@ -14,18 +14,31 @@
 
    @media screen and (min-width: 1280px) {
       & {
-         top: 430px;
-         width: 420px;
+         // top: 260px;
+         // width: 420px;
       }
    }
 
    &__img {
+      position: absolute;
+      top: 143px;
+      left: 15px;
+
+      @media screen and (min-width: 1280px) {
+         & {
+            left: -20px;
+            top: 258px;
+         }
+      }
    }
 
+
    &__text {
-      position: absolute;
-      left: 115px;
-      top: 47px;
+      // position: absolute;
+      // left: 115px;
+      // top: 47px;
+      margin-top: 66px;
+      margin-left: 118px;
       width: 114px;
       @include font(8px, 1.5, 0);
       color: var(--color-menu);
@@ -34,16 +47,20 @@
          & {
             @include font(14px, 1.4, 0);
             width: 200px;
-            left: 220px;
-            top: 55px;
+            margin-top: 112px;
+            margin-left: 170px;
+            // left: 220px;
+            // top: 55px;
          }
       }
    }
 
    &__link {
-      position: absolute;
-      left: 115px;
-      top: 102px;
+      // position: absolute;
+      // left: 115px;
+      // top: 102px;
+      margin-top: 7px;
+      margin-left: 118px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -61,8 +78,10 @@
 
       @media screen and (min-width: 1280px) {
          & {
-            left: 220px;
-            top: 155px;
+            // left: 220px;
+            // top: 155px;
+            margin-top: 20px;
+            margin-left: 170px;
             width: 26px;
             height: 26px;
          }

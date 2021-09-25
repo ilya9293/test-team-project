@@ -8,6 +8,11 @@
       font-weight: 700;
       @include font (14px, 1.29, 0);
       color: var(--color-menu);
+
+      &:hover,
+      &:focus {
+         color: var(--color-main-title);
+      }
    }
 }
 
