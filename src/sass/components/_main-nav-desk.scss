@@ -17,5 +17,10 @@
       @include font(16px, 1.31, 0);
       font-weight: 700;
       color: var(--color-menu);
+
+      &:hover,
+      &:focus {
+         color: var(--color-main-title);
+      }
    }
 }

@@ -4,21 +4,25 @@
 
    &_hero {
       position: relative;
-      padding-top: 0px;
-      padding-bottom: 0px;
+      padding-top: 190px;
+      padding-bottom: 160px;
       background-color: var(--color-background-main-);
       overflow: hidden;
-      height: 502px;
+      // height: 502px;
 
       @media screen and (min-width: 768px) {
          & {
-            height: 399px;
+            padding-top: 100px;
+            padding-bottom: 34px;
+            // height: 399px;
          }
       }
 
       @media screen and (min-width: 1280px) {
          & {
-            height: 665px;
+            padding-top: 170px;
+            padding-bottom: 56px;
+            // height: 665px;
          }
       }
    }
@@ -31,6 +35,7 @@
 
 @media screen and (min-width: 480px) {
    .container {
+      width: 480px;
       margin: 0 auto;
    }
 }
@@ -48,12 +53,14 @@
 }
 
 .container__hero-title-btn {
-   position: absolute;
-   top: 193px;
+   // position: absolute;
+   // top: 193px;
+   // padding-top: 193px;
 
    @media screen and (min-width: 768px) {
       & {
-         top: 100px;
+         // top: 100px;
+         // padding-top: 100px;
       }
    }
 
