@@ -1,0 +1,138 @@
+.nat-products {
+
+@media screen and (min-width: 768px) {
+   & {
+      display: flex;
+      // flex-wrap: wrap;
+      // margin-top: -20px;
+      // margin-left: -20px;
+      justify-content: space-between;
+   }
+}
+
+   &__item {
+      position: relative;
+      width: 280px;
+      background-color: var(--color-background-main-);
+      padding: 160px 40px 40px 40px;
+      margin: 0 auto;
+      border-radius: 24px;
+   }
+
+   &__item:nth-child(2) {
+      background-color: var(--color-background-cofe);
+   }
+
+   &__item:nth-child(3) {
+      background-color: var(--color-background-shake);
+   }
+
+   @media screen and (min-width: 768px) {
+      &__item {
+         width: 220px;
+         padding: 150px 11px 40px 11px;
+
+         // margin-left: 20px;
+         // margin-top: 20px;
+         // flex-basis: calc((100% - 60px) / 3);
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__item {
+         width: 335px;
+         padding: 165px 45px 50px 45px;
+      }
+   }
+
+   @media screen and (max-width: 767px) {
+      &__item:not(:last-child) {
+         margin-bottom: 130px;
+      }
+   }
+
+   &__img {
+      position: absolute;
+      top: -115px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+
+   @media screen and (min-width: 768px) {
+      &__img {
+         top: -105px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__img {
+         top: -210px;
+      }
+   }
+
+   &__title {
+      font-family: var(--font-title);
+      @include font(20px, 1.15);
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--color-menu);
+      margin-bottom: 30px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__title {
+         @include font(30px, 1.13);
+      }
+   }
+
+   &__title::after {
+      content: "...";
+      margin-top: 15px;
+      display: block;
+   }
+
+   &__text {
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 700;
+      @include font(14px);
+      text-align: center;
+      color: var(--color-menu);
+   }
+
+   @media screen and (min-width: 768px) {
+      &__text {
+         width: 200px;
+         height: 125px;
+         overflow: auto;
+         @include font(14px, 1.76);
+         margin-bottom: 40px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__text {
+         width: 241px;
+         height: 106px;
+         font-size: 16px;
+         margin-bottom: 60px;
+      }
+   }
+
+   &__link {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-menu);
+      border-radius: 50%;
+   }
+
+   &__icon {
+      fill: var(--color-main-title);
+   }
+}
