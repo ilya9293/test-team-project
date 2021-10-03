@@ -12,7 +12,7 @@
 
    &__item {
       position: relative;
-      width: 280px;
+      // width: 280px;
       background-color: var(--color-background-main-);
       padding: 160px 40px 40px 40px;
       margin: 0 auto;
@@ -29,7 +29,7 @@
 
    @media screen and (min-width: 768px) {
       &__item {
-         width: 220px;
+         // width: 220px;
          padding: 150px 11px 40px 11px;
 
          // margin-left: 20px;
@@ -40,7 +40,7 @@
 
    @media screen and (min-width: 1280px) {
       &__item {
-         width: 335px;
+         // width: 335px;
          padding: 165px 45px 50px 45px;
       }
    }
@@ -106,7 +106,7 @@
       &__text {
          width: 200px;
          height: 125px;
-         overflow: auto;
+         overflow: hidden;
          @include font(14px, 1.76);
          margin-bottom: 40px;
       }
@@ -121,7 +121,7 @@
       }
    }
 
-   &__link {
+   &__btn {
       width: 40px;
       height: 40px;
       margin: 0 auto;
@@ -130,6 +130,13 @@
       justify-content: center;
       background-color: var(--color-menu);
       border-radius: 50%;
+      border: none;
+      cursor: pointer;
+
+      &:hover, 
+      &:focus {
+         background-color: #ECEBEB;
+      }
    }
 
    &__icon {
