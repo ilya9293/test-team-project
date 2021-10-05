@@ -1,14 +1,13 @@
 .nat-products {
-
-@media screen and (min-width: 768px) {
-   & {
-      display: flex;
-      // flex-wrap: wrap;
-      // margin-top: -20px;
-      // margin-left: -20px;
-      justify-content: space-between;
+   @media screen and (min-width: 768px) {
+      & {
+         display: flex;
+         // flex-wrap: wrap;
+         // margin-top: -20px;
+         // margin-left: -20px;
+         justify-content: space-between;
+      }
    }
-}
 
    &__item {
       position: relative;
@@ -126,11 +125,10 @@
    }
 
    &__btn {
-      
       width: 40px;
       height: 40px;
       margin: 0 auto;
-      
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -139,9 +137,10 @@
       border: none;
       cursor: pointer;
 
-      &:hover, 
+      &:hover,
       &:focus {
-         background-color: #ECEBEB;
+         background-color: #ecebeb;
+       
       }
    }
 
@@ -165,20 +164,28 @@
       visibility: hidden;
       pointer-events: none;
       transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
-      .nat-products__btn:focus + & {
+
+      .nat-products__checkbox:checked + & {
          opacity: 1;
          visibility: visible;
          pointer-events: visible;
       }
-   
+
       &_color-cofe {
          background-color: var(--color-background-cofe);
       }
-   
+
       &_color-green {
          background-color: var(--color-background-shake);
       }
    }
-   
+
+   &__btn-close {
+      display: flex;
+      justify-content: flex-end;
+   }
+
+   &__icon_fill {
+      fill: #000000;
+   }
 }
