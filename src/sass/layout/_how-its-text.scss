@@ -1,0 +1,32 @@
+@media screen and (max-width: 767px) {
+   .how-its-text {
+      display: none;
+   }
+}
+
+.how-its-text {
+   width: 335px;
+   font-weight: 500;
+   @include font(14px, 1.76);
+   color: #907E82;
+   margin-bottom: 60px;
+
+   &__span {
+      display: block;
+      margin-top: 15px;
+
+      @media screen and (min-width: 1280px) {
+         & {
+            margin-top: 45px;
+         }
+      }
+      }
+
+      @media screen and (min-width: 1280px) {
+         & {
+            width: 465px;
+            @include font(14px, 1.94);
+            margin: 0 0 45px 0;
+         }
+      }
+}
