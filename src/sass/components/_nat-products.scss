@@ -128,7 +128,6 @@
       width: 40px;
       height: 40px;
       margin: 0 auto;
-
       display: flex;
       align-items: center;
       justify-content: center;
@@ -140,7 +139,6 @@
       &:hover,
       &:focus {
          background-color: #ecebeb;
-       
       }
    }
 
@@ -183,6 +181,7 @@
    &__btn-close {
       display: flex;
       justify-content: flex-end;
+      margin-bottom: 20px;
    }
 
    &__icon_fill {
