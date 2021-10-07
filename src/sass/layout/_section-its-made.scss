@@ -1,10 +1,13 @@
 .section_its-made {
+background-color: #fFF5F6;
+
    @media screen and (max-width: 767px) {
       & {
          background-image: url(\images\about\milk-drops-mob.png);
          background-repeat: no-repeat;
          background-position-y: 48%;
          background-size: contain;
+         
       }
 
       @media (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -16,13 +19,19 @@
       }
    }
 
+   @media screen and (min-width: 768px) {
+      & {
+         padding-bottom: 250px;
+      }
+   }
+
    @media screen and (min-width: 1280px) {
       & {
          background-image: url(/images/about/milk-drops-desktop.png);
          background-repeat: no-repeat;
          background-position-y: 30%;
          background-size: contain;
-         padding-bottom: 150px;
+         padding-bottom: 310px;
       }
 
       @media (min-device-pixel-ratio: 2) and (min-width: 1280px),

@@ -1,0 +1,8 @@
+.reviews-comment {
+   position: relative;
+   z-index: 5;
+   font-weight: 500;
+   @include font(12px, 2.55, 0);
+   text-align: center;
+   
+}
