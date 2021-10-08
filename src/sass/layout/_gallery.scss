@@ -1,0 +1,16 @@
+.gallery-img {
+   margin: 0 auto;
+   margin-top: -169px;
+
+   @media screen and (min-width: 768px) {
+      & {
+         margin-top: -217px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         margin-top: -261px;
+      }
+   }
+}
