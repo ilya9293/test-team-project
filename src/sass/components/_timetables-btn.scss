@@ -1,5 +1,27 @@
 .timetables-btn {
+   margin-top: 55px;
+
+   @media screen and (min-width: 768px) {
+      & {
+         margin-top: 80px;
+         display: flex;
+         justify-content: center;
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      &__item:not(:last-child) {
+         margin-right: 15px;
+      }
+   }
+
    &__item {
+   }
+
+   @media screen and (max-width: 767px) {
+      &__item:not(:last-child) {
+         margin-bottom: 10px;
+      }
    }
 
    &__link {
@@ -8,11 +30,30 @@
       justify-content: center;
       width: 161px;
       height: 44px;
-      background-color: #D41342;
+      margin: 0 auto;
+      background-color: #d41342;
       color: var(--color-menu);
+      border-radius: 22px;
+      font-weight: 700;
+      @include font(16px, 1.31, 0);
 
+      &:hover,
+      &:focus {
+         background-color: #c7133e;
+      }
+   }
+
+   &__link_backcolor {
+      background-color: var(--color-menu);
+      color: var(--color-main-title);
+
+      &:hover,
+      &:focus {
+         background-color: #ecebeb;
+      }
    }
 
    &__icon {
+      margin-left: 8px;
    }
 }

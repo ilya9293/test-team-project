@@ -1,8 +1,28 @@
 .timetables {
    margin-top: -165px;
-   margin-bottom: 55px;
+   
+
+   @media screen and (min-width: 768px) {
+      & {
+         display: flex;
+         flex-wrap: wrap;
+         margin-top: -180px;
+         margin-bottom: -20px;
+         margin-left: -20px;
+        
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         margin-top: -220px;
+      }
+   }
 
    &__item {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
       width: 220px;
       padding: 43px 20px;
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -17,8 +37,25 @@
       }
    }
 
+   @media screen and (min-width: 768px) {
+      &__item {
+         padding: 50px 30px;
+         margin-bottom: 20px;
+         margin-left: 20px;
+         flex-basis: calc((100% - 60px) / 3);
+         margin-right: 0;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__item {
+         width: 330px;
+         padding: 55px 45px;
+      }
+   }
+
    &__title {
-      width: 80px;
+      display: inline-block;
       background-color: var(--color-background-cofe);
       border-radius: 4px;
       font-weight: 500;
@@ -26,9 +63,17 @@
       color: var(--color-menu);
       text-align: center;
       margin-bottom: 25px;
+      padding: 0 25px;
 
       &_back-color {
          background-color: var(--color-background-shake);
+      }
+   }
+
+   @media screen and (min-width: 768px) {
+      &__title {
+         padding: 0 15px;
+         font-size: 16px;
       }
    }
 
@@ -38,10 +83,36 @@
       margin-bottom: 10px;
    }
 
+   @media screen and (min-width: 768px) {
+      &__city {
+         font-size: 14px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__city {
+         font-size: 16px;
+      }
+   }
+
    &__text {
+      flex: 1 1 auto;
       font-weight: 500;
       @include font(12px, 1.5, 0);
       color: #907e82;
+   }
+
+   @media screen and (min-width: 768px) {
+      &__text {
+         font-size: 14px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__text {
+         font-size: 16px;
+         line-height: 1.83;
+      }
    }
 
    &__time-days::after,
@@ -56,9 +127,38 @@
       margin-bottom: 25px;
    }
 
+   @media screen and (min-width: 768px) {
+      &__time-days::after,
+      &__time-days::before {
+         width: 157px;
+         margin-top: 30px;
+         margin-bottom: 30px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__time-days::after,
+      &__time-days::before {
+         width: 234px;
+      }
+   }
+
    &__days {
       font-weight: 500;
       @include font(12px, 1.86, 0);
+   }
+
+   @media screen and (min-width: 768px) {
+      &__days {
+         font-size: 14px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__days {
+         font-size: 16px;
+         letter-spacing: 0.04em;
+      }
    }
 
    &__time {
@@ -68,9 +168,34 @@
       margin-top: -2px;
    }
 
+   @media screen and (min-width: 768px) {
+      &__time {
+         font-size: 14px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__time {
+         font-size: 16px;
+      }
+   }
+
    &__tel-email {
       font-weight: 500;
       @include font(12px, 1.5, 0);
       color: #907e82;
+   }
+
+   @media screen and (min-width: 768px) {
+      &__tel-email {
+         @include font(14px, 1.83, 0);
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &__tel-email {
+         font-size: 16px;
+         
+      }
    }
 }
