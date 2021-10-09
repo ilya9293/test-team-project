@@ -1,6 +1,6 @@
 .main-title {
    font-family: var(--font-title);
-   @include font (34px, 1.15);
+   @include font(34px, 1.15);
    text-transform: uppercase;
    color: var(--color-main-title);
    text-align: center;
@@ -13,7 +13,7 @@
 
    @media screen and (min-width: 1280px) {
       & {
-         @include font (58px, 1.14, 0.06em);
+         @include font(58px, 1.14, 0.06em);
       }
    }
 
@@ -30,6 +30,22 @@
    @media screen and (min-width: 1280px) {
       &_indent {
          margin-bottom: 260px;
+      }
+   }
+
+   &_made {
+      margin-bottom: 25px;
+   }
+
+   @media screen and (min-width: 768px) {
+      &_made {
+         margin-bottom: 50px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      &_made {
+         margin-bottom: 55px;
       }
    }
 }
