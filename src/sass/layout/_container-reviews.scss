@@ -1,5 +1,26 @@
 .container-reviews {
    position: relative;
-   background-color: #FAFAFA;
+   background-color: #fafafa;
    padding: 45px 50px 20px;
+
+   @media screen and (min-width: 768px) {
+      & {
+         padding: 45px 80px;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         padding: 45px 90px;
+      }
+   }
+
+   // &::after {
+   //    content: "...";
+   //    display: block;
+   //    font-size: 50px;
+   //    color: #c7133e;
+   //    text-align: center;
+   //    letter-spacing: 10px;
+   // }
 }

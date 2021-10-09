@@ -4,5 +4,17 @@
    font-weight: 500;
    @include font(12px, 2.55, 0);
    text-align: center;
-   
+   background-image: repeating-linear-gradient(180deg, transparent 0, transparent 28px, #e1e1e1 29px, transparent 30px);
+
+   @media screen and (min-width: 768px) {
+      & {
+         @include font(14px, 2.16);
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         @include font(16px, 1.86);
+      }
+   }
 }
