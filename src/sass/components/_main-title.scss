@@ -49,3 +49,22 @@
       }
    }
 }
+
+.footer__main-title {
+   width: 200px;
+   text-align: left;
+
+   @media screen and (min-width: 768px) {
+      & {
+         width: 340px;
+         letter-spacing: 0.06em;
+      }
+   }
+
+   @media screen and (min-width: 1280px) {
+      & {
+         width: auto;
+         
+      }
+   }
+}

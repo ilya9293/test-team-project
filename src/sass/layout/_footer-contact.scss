@@ -1,0 +1,23 @@
+.footer-contact {
+font-weight: 700;
+@include font (12px, 1.86, 0);
+text-align: right;
+
+@media screen and (min-width: 768px) {
+   & {
+      font-size: 14px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   & {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+   }
+}
+
+   &__link {
+      color: var(--color-main-title);
+   }
+}
+
