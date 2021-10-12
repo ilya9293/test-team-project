@@ -1,3 +1,24 @@
 .slider {
-   
+}
+
+.slick-dots li button {
+   padding: 0;
+   width: 12px;
+   height: 12px;
+   background-color: #d9d9d9;
+   border-radius: 50%;
+
+   &::before {
+      font-size: 0;
+
+   }
+}
+
+.slick-dots li.slick-active button {
+   background-image: url(/images/svg/home.svg);
+   background-color: transparent;
+}
+
+.slick-dots {
+   bottom: -60px;
 }

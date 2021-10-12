@@ -2,16 +2,21 @@
    position: relative;
    background-color: #fafafa;
    padding: 45px 50px 20px;
+   width: 280px;
+   margin-left: 10px;
+   margin-right: 10px;
 
    @media screen and (min-width: 768px) {
       & {
          padding: 45px 80px;
+         width: 600px;
       }
    }
 
    @media screen and (min-width: 1280px) {
       & {
          padding: 45px 90px;
+         width: 905px;
       }
    }
 
