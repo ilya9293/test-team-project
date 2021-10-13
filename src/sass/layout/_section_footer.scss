@@ -15,4 +15,26 @@
          padding-bottom: 10px;
       }
    }
+
+   &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 90px;
+      height: 1px;
+      width: 100%;
+      background-color: #e1e1e1;
+
+      @media screen and (min-width: 768px) {
+         & {
+            bottom: 75px;
+         }
+      }
+
+      @media screen and (min-width: 1280px) {
+         & {
+            bottom: 45px;
+         }
+      }
+   }
 }

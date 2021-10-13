@@ -18,6 +18,11 @@ text-align: right;
 
    &__link {
       color: var(--color-main-title);
+
+      &:hover,
+      &:focus {
+         color: var(--color-sub-title);
+      }
    }
 }
 

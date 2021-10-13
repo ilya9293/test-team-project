@@ -1,0 +1,127 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   max-width: 600px;
+   margin: 0 auto;
+
+   &__title {
+      @include font(20px);
+      font-family: var(--font-title);
+      font-weight: 400;
+      max-width: 320px;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      color: var(--color-main-title);
+   }
+
+   &__label {
+      margin-top: 20px;
+      @include font(14px);
+      font-weight: 500;
+      color: var(--color-main-title);
+   }
+
+   &__container {
+      display: block;
+      position: relative;
+   }
+
+   &__field {
+      width: 100%;
+      border: none;
+      margin-top: 10px;
+      height: 40px;
+      border-radius: 15px;
+      padding-left: 40px;
+
+      &:focus {
+         outline: 2px solid var(--color-main-title);
+      }
+   }
+
+   &__icon {
+      position: absolute;
+      left: 10px;
+      top: calc(50% + 5px);
+      transform: translateY(-50%);
+      fill: var(--color-main-title);
+   }
+
+   &__icon_chek {
+      position: static;
+      transform: translateY(0);
+      margin-right: 10px;
+      border: 2px solid var(--color-main-title);
+      border-radius: 2px;
+      fill: var(--color-background-main-);
+   }
+
+   &__checkbox:checked + &__icon_chek {
+      fill: #ffffff;
+      background-color: var(--color-main-title);
+      border: none;
+   }
+
+   &__checkbox:focus + &__icon_chek {
+      outline: 1px solid #0000ff;
+      outline-offset: 2px;
+   }
+
+   &__accept {
+   }
+
+   &__link {
+      color: var(--color-description);
+
+      &:hover,
+      &:focus {
+         color: var(--color-menu);
+      }
+   }
+
+   &__label_position {
+      @include font(14px);
+      align-self: center;
+      display: flex;
+      align-items: center;
+      // justify-content: center;
+   }
+
+   &__btn {
+      margin-top: 20px;
+      align-self: center;
+      width: 150px;
+      height: 40px;
+      border-radius: 25px;
+      background-color: var(--color-main-title);
+      font-weight: 500;
+      @include font(18px);
+      color: #ffffff;
+      border: none;
+
+      &:hover,
+      &:focus {
+         background-color: #C7133E;
+      }
+   }
+}
+.form-coment {
+   resize: none;
+   border-radius: 15px;
+   width: 100%;
+   min-height: 120px;
+   padding: 15px;
+   border: none;
+   margin-top: 10px;
+
+   &:focus {
+      outline: 2px solid var(--color-main-title);
+   }
+
+   &::placeholder {
+      font-family: var(--font-main);
+      color: var(--color-sub-title);
+      font-size: 14px;
+   }
+}

@@ -1,0 +1,16 @@
+.footer-rights {
+   width: 150px;
+   text-align: center;
+   margin: 0 auto;
+   font-weight: 700;
+   @include font(14px, 1.52, 0);
+   color: var(--color-description);
+
+   @media screen and (min-width: 768px) {
+      & {
+         width: 100%;
+         @include font (14px, 1.86, 0.02em);
+         
+      }
+   }
+}
